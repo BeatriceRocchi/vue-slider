@@ -38,6 +38,7 @@ createApp({
         },
       ],
       counter: 0,
+      isAutoplay: true,
     };
   },
 
@@ -53,14 +54,18 @@ createApp({
       }
     },
 
-    //Logica autoplay che di default va all'immagine successiva (ie. goNext(true))
+    //Logica autoplay che di default va all'immagine successiva (ie. goNext(true)) e controllo su variabile isAutoplay che cambia a seconda che il mouse sia o meno sullo slider
     startAutoplay() {
-      setInterval(() => this.goNext(true), 3000);
+      setInterval(() => {
+        if (this.isAutoplay) {
+          this.goNext(true);
+        }
+      }, 3000);
     },
   },
 
   mounted() {
-    this.startAutoplay();
+    this.startAutoplay(true);
   },
 }).mount("#app");
 
