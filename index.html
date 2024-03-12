@@ -44,6 +44,7 @@
                 id="my-carousel"
                 @mouseenter="isAutoplay = false"
                 @mouseleave="isAutoplay = true"
+                @dblclick="isNext = !isNext"
               >
                 <div class="my-carousel-images">
                   <div class="my-carousel-item active">
@@ -87,13 +88,6 @@
                     <span class="my-next-hook"></span>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="col-12 p-3" id="my-btn-wrapper">
-              <div id="my-btn-autoplay" class="btn btn-success">Autoplay</div>
-              <div id="my-btn-direction" class="btn btn-success">
-                Reverse direction
               </div>
             </div>
           </div>
