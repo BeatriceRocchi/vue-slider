@@ -18,3 +18,4 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 5. Caricare tutte le immagini nelle thumbnails (v-for)
 6. Rendere attiva la thumbnail con indice uguale al counter
 7. Al click sulla thumbnail, modificare il counter assegnandogli l'indice della thumbnail stessa
+8. Al caricamento della pagina (al mounted di createApp), avviare l'autoplay. Di default l'autoplay andrà all'immagine successiva

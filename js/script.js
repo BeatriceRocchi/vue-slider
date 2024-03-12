@@ -52,6 +52,15 @@ createApp({
         this.counter = 0;
       }
     },
+
+    //Logica autoplay che di default va all'immagine successiva (ie. goNext(true))
+    startAutoplay() {
+      setInterval(() => this.goNext(true), 3000);
+    },
+  },
+
+  mounted() {
+    this.startAutoplay();
   },
 }).mount("#app");
 
