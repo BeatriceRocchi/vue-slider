@@ -17,3 +17,4 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 4. Al click su uovo/uccello incrementare/decrementare il counter ed inserire controlli per creare slider infinito
 5. Caricare tutte le immagini nelle thumbnails (v-for)
 6. Rendere attiva la thumbnail con indice uguale al counter
+7. Al click sulla thumbnail, modificare il counter assegnandogli l'indice della thumbnail stessa

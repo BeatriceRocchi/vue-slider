@@ -70,6 +70,7 @@
                       v-for="(image, index) in images"
                       class="my-thumbnail"
                       :class="{'active': counter === index }"
+                      @click="counter = index"
                     >
                       <img
                         class="img-fluid"
@@ -80,10 +81,7 @@
                   </div>
 
                   <!-- next -->
-                  <div
-                    @click="goNext(true)"
-                    class="my-next position-absolute"
-                  >
+                  <div @click="goNext(true)" class="my-next position-absolute">
                     <span class="my-next-hook"></span>
                   </div>
                 </div>
